@@ -1,15 +1,17 @@
 import { View, Image, Text, TouchableOpacity, ScrollView } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 import LayoutFull from "~/components/LayoutFull";
 import { COLOR } from "~/assets/Colors";
 import ActionList from "~/components/ActionList";
 import Photos from "~/components/Photos";
-import ReviewList from "~/components/Review/ReviewList"
+import ReviewList from "~/components/Restaurant/ReviewList";
 import GroupCard from "~/components/GroupCard";
 import GroupCardCollection from "~/components/GroupCardCollection";
 
 export default function Restaurant() {
+  const navigation = useNavigation();
   return (
     <LayoutFull statusBarStyle="white-content">
       <ScrollView>
@@ -20,12 +22,13 @@ export default function Restaurant() {
               uri: "https://www.nrn.com/sites/nrn.com/files/pizza-hut-store-closures.gif",
             }}
           />
-          <AntDesign
-            name="arrowleft"
-            size={34}
-            color="white"
-            style={{ position: "absolute", top: 40, left: 20 }}
-          />
+          <TouchableOpacity onPress={()=> navigation.goBack()} style={{ position: "absolute", top: 40, left: 20 }}>
+            <AntDesign
+              name="arrowleft"
+              size={34}
+              color="white"
+            />
+          </TouchableOpacity>
         </View>
         {/* Title */}
         <View
@@ -257,10 +260,9 @@ export default function Restaurant() {
             backgroundColor: COLOR.BACKGROUND_OPACITY_COLOR,
           }}
         ></View>
-        <View style={{paddingBottom:30}}>
-        <GroupCardCollection title="Collections by Capi"/>
+        <View style={{ paddingBottom: 30 }}>
+          <GroupCardCollection title="Collections by Capi" />
         </View>
-
       </ScrollView>
     </LayoutFull>
   );

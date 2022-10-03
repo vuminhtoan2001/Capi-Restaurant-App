@@ -1,9 +1,9 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { View, Dimensions, StyleSheet } from "react-native";
 
-import config from './config'
+import config from "./config";
 
-import {COLOR} from '~/assets/Colors'
+import { COLOR } from "~/assets/Colors";
 
 const Tab = createBottomTabNavigator();
 
@@ -11,6 +11,7 @@ const { width, height } = Dimensions.get("window");
 function BottomTab() {
   return (
     <Tab.Navigator
+      initialRouteName={"HomeBottomTab"}
       screenOptions={({ route }) => ({
         tabBarStyle: {
           height: 80,
@@ -18,14 +19,14 @@ function BottomTab() {
         tabBarActiveTintColor: COLOR.PRIMARY_COLOR,
         tabBarInactiveTintColor: COLOR.TEXT_OPACITY_COLOR,
         tabBarShowLabel: true,
-        tabBarLabelStyle:{
+        tabBarLabelStyle: {
           fontFamily: "quicksan_700",
-          fontSize:10,
+          fontSize: 10,
         },
         headerShown: false,
       })}
     >
-      {config.map(item => (
+      {config.map((item) => (
         <Tab.Screen
           key={item.name}
           name={item.name}

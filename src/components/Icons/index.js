@@ -71,7 +71,10 @@ export const MapIcon = ({ width, height }) => (
 );
 
 export const UsIcon = ({ width, height }) => (
-  <SvgXml width={width} height={height} xml={`<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <SvgXml
+    width={width}
+    height={height}
+    xml={`<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="22" height="15.7143" rx="2" fill="white"/>
   <mask id="mask0_0_254" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="16">
   <rect width="22" height="15.7143" rx="2" fill="white"/>
@@ -98,10 +101,14 @@ export const UsIcon = ({ width, height }) => (
   </linearGradient>
   </defs>
   </svg>
-  `} />
+  `}
+  />
 );
 export const AuIcon = ({ width, height }) => (
-  <SvgXml width={width} height={height} xml={`<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <SvgXml
+    width={width}
+    height={height}
+    xml={`<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="22" height="15.7143" rx="2" fill="white"/>
   <mask id="mask0_0_287" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="16">
   <rect width="22" height="15.7143" rx="2" fill="white"/>
@@ -129,10 +136,14 @@ export const AuIcon = ({ width, height }) => (
   </linearGradient>
   </defs>
   </svg>
-  `} />
+  `}
+  />
 );
 export const FranIcon = ({ width, height }) => (
-  <SvgXml width={width} height={height} xml={`<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <SvgXml
+    width={width}
+    height={height}
+    xml={`<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect x="0.25" y="0.25" width="21.5" height="15.2143" rx="1.75" fill="white" stroke="#F5F5F5" stroke-width="0.5"/>
   <mask id="mask0_0_301" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="16">
   <rect x="0.25" y="0.25" width="21.5" height="15.2143" rx="1.75" fill="white" stroke="white" stroke-width="0.5"/>
@@ -142,10 +153,14 @@ export const FranIcon = ({ width, height }) => (
   <path fill-rule="evenodd" clip-rule="evenodd" d="M0 15.7143H7.33333V0H0V15.7143Z" fill="#1035BB"/>
   </g>
   </svg>
-  `} />
+  `}
+  />
 );
 export const BraIcon = ({ width, height }) => (
-  <SvgXml width={width} height={height} xml={`<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <SvgXml
+    width={width}
+    height={height}
+    xml={`<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="22" height="15.7143" rx="2" fill="white"/>
   <mask id="mask0_0_324" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="16">
   <rect width="22" height="15.7143" rx="2" fill="white"/>
@@ -162,10 +177,14 @@ export const BraIcon = ({ width, height }) => (
   </g>
   </g>
   </svg>
-  `} />
+  `}
+  />
 );
 export const CaIcon = ({ width, height }) => (
-  <SvgXml width={width} height={height} xml={`<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <SvgXml
+    width={width}
+    height={height}
+    xml={`<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect x="0.25" y="0.25" width="21.5" height="15.2143" rx="1.75" fill="white" stroke="#F5F5F5" stroke-width="0.5"/>
   <mask id="mask0_0_334" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="16">
   <rect x="0.25" y="0.25" width="21.5" height="15.2143" rx="1.75" fill="white" stroke="white" stroke-width="0.5"/>
@@ -176,10 +195,14 @@ export const CaIcon = ({ width, height }) => (
   <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8261 7.07869C12.5929 7.31189 12.1988 7.10101 12.2635 6.77761L12.5714 5.23811L11.5238 5.76192L11 4.19049L10.4762 5.76192L9.42855 5.23811L9.73645 6.77761C9.80113 7.10101 9.40709 7.31189 9.17389 7.07869L9.14044 7.04524C9.01027 6.91507 8.79921 6.91507 8.66904 7.04524L8.38093 7.33335L7.33331 6.80954L7.85712 7.85716L7.56902 8.14526C7.43884 8.27544 7.43884 8.48649 7.56902 8.61667L8.90474 9.9524H10.4762L10.7381 11.5238H11.2619L11.5238 9.9524H13.0952L14.4309 8.61667C14.5611 8.48649 14.5611 8.27544 14.4309 8.14526L14.1428 7.85716L14.6666 6.80954L13.619 7.33335L13.3309 7.04524C13.2007 6.91507 12.9897 6.91507 12.8595 7.04524L12.8261 7.07869Z" fill="#FF3131"/>
   </g>
   </svg>
-  `} />
+  `}
+  />
 );
 export const JaIcon = ({ width, height }) => (
-  <SvgXml width={width} height={height} xml={`<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <SvgXml
+    width={width}
+    height={height}
+    xml={`<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect x="0.25" y="0.25" width="21.5" height="15.2143" rx="1.75" fill="white" stroke="#F5F5F5" stroke-width="0.5"/>
   <mask id="mask0_0_341" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="16">
   <rect x="0.25" y="0.25" width="21.5" height="15.2143" rx="1.75" fill="white" stroke="white" stroke-width="0.5"/>
@@ -194,10 +217,15 @@ export const JaIcon = ({ width, height }) => (
   </linearGradient>
   </defs>
   </svg>
-  `} />
+  `}
+  />
 );
 
-export const KroIcon = ({ width, height })=>(<SvgXml width={width} height={height} xml={`<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+export const KroIcon = ({ width, height }) => (
+  <SvgXml
+    width={width}
+    height={height}
+    xml={`<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="0.25" y="0.25" width="21.5" height="15.2143" rx="1.75" fill="white" stroke="#F5F5F5" stroke-width="0.5"/>
 <mask id="mask0_0_307" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="16">
 <rect x="0.25" y="0.25" width="21.5" height="15.2143" rx="1.75" fill="white" stroke="white" stroke-width="0.5"/>
@@ -213,5 +241,25 @@ export const KroIcon = ({ width, height })=>(<SvgXml width={width} height={heigh
 <path opacity="0.75" fill-rule="evenodd" clip-rule="evenodd" d="M4.81454 2.85635C4.90658 2.69692 5.11045 2.6423 5.26988 2.73435L5.59979 2.92482C5.75922 3.01687 5.81385 3.22073 5.7218 3.38016L4.4837 5.52461C4.39166 5.68404 4.18779 5.73866 4.02836 5.64662L3.69845 5.45614C3.53902 5.36409 3.48439 5.16023 3.57644 5.0008L4.81454 2.85635ZM16.4002 2.92482C16.2407 3.01687 16.1861 3.22073 16.2781 3.38016L17.5162 5.52461C17.6083 5.68404 17.8122 5.73866 17.9716 5.64662L18.3015 5.45614C18.4609 5.36409 18.5156 5.16023 18.4235 5.0008L17.1854 2.85635C17.0934 2.69692 16.8895 2.6423 16.7301 2.73435L16.4002 2.92482ZM15.0393 3.71054C14.8798 3.80258 14.8252 4.00645 14.9172 4.16588L16.1553 6.31032C16.2474 6.46975 16.4513 6.52438 16.6107 6.43233L16.9406 6.24185C17.1 6.14981 17.1547 5.94594 17.0626 5.78651L15.8245 3.64207C15.7325 3.48264 15.5286 3.42801 15.3692 3.52006L15.0393 3.71054ZM3.57644 10.7135C3.48439 10.5541 3.53902 10.3502 3.69845 10.2582L4.02836 10.0677C4.18779 9.97563 4.39166 10.0303 4.4837 10.1897L5.7218 12.3341C5.81385 12.4936 5.75922 12.6974 5.59979 12.7895L5.26988 12.9799C5.11045 13.072 4.90658 13.0174 4.81454 12.8579L3.57644 10.7135ZM5.05935 9.47244C4.89991 9.56449 4.84529 9.76835 4.93734 9.92778L6.17543 12.0722C6.26748 12.2317 6.47134 12.2863 6.63077 12.1942L6.96069 12.0038C7.12012 11.9117 7.17474 11.7078 7.0827 11.5484L5.8446 9.40397C5.75255 9.24454 5.54869 9.18992 5.38926 9.28197L5.05935 9.47244ZM16.1553 9.40397C16.2474 9.24454 16.4513 9.18992 16.6107 9.28197L16.9406 9.47244C17.1 9.56449 17.1547 9.76835 17.0626 9.92778L15.8245 12.0722C15.7325 12.2317 15.5286 12.2863 15.3692 12.1942L15.0393 12.0038C14.8798 11.9117 14.8252 11.7078 14.9172 11.5484L16.1553 9.40397ZM17.9716 10.0677C17.8122 9.97563 17.6083 10.0303 17.5162 10.1897L16.2781 12.3341C16.1861 12.4936 16.2407 12.6974 16.4002 12.7895L16.7301 12.9799C16.8895 13.072 17.0934 13.0174 17.1854 12.8579L18.4235 10.7135C18.5156 10.5541 18.4609 10.3502 18.3015 10.2582L17.9716 10.0677ZM6.63077 3.52006C6.47134 3.42801 6.26748 3.48264 6.17543 3.64207L4.93734 5.78651C4.84529 5.94594 4.89991 6.14981 5.05935 6.24185L5.38926 6.43233C5.54869 6.52438 5.75255 6.46975 5.8446 6.31032L7.0827 4.16588C7.17474 4.00645 7.12012 3.80258 6.96069 3.71054L6.63077 3.52006Z" fill="#262626"/>
 </g>
 </svg>
-`}/>)
+`}
+  />
+);
 
+export const GroupIcon = ({width,height})=>(
+  <SvgXml
+    width={width}
+    height={height}
+    xml={`<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="2.8" cy="2.8" r="1.8" stroke="#20D994" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="2.8" cy="10" r="1.8" stroke="#20D994" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="2.8" cy="17.2" r="1.8" stroke="#20D994" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="10.8" cy="2.8" r="1.8" stroke="#20D994" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="10.8" cy="10" r="1.8" stroke="#20D994" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="10.8" cy="17.2" r="1.8" stroke="#20D994" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="18.8" cy="2.8" r="1.8" stroke="#20D994" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="18.8" cy="10" r="1.8" stroke="#20D994" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="18.8" cy="17.2" r="1.8" stroke="#20D994" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    `}
+  />
+)

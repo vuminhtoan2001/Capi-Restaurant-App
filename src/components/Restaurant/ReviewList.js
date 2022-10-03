@@ -23,7 +23,7 @@ export default function ReviewList() {
         >
           Reviews
         </Text>
-        <TouchableOpacity onPress={() => navigation.navigate("ListReview")}>
+        <TouchableOpacity onPress={() => navigation.navigate("ReviewList")}>
           <Text
             style={{
               fontFamily: "quicksan_700",

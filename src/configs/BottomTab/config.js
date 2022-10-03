@@ -3,7 +3,7 @@ import { Feather } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
 
-import Home from "~/Screens/Home";
+import Home from "./Home";
 import Discovery from "~/Screens/Discovery";
 import Bookmark from "~/Screens/Bookmark";
 import TopFoodie from "~/Screens/TopFoodie";

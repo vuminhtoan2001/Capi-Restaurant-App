@@ -1,15 +1,19 @@
 import { View, ScrollView, Text, TouchableOpacity, Image } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { Entypo } from "@expo/vector-icons";
+
 import { COLOR } from "~/assets/Colors";
 import Card from "~/components/Card";
 
 export default function Photos({ title }) {
+  const navigation = useNavigation();
   return (
     <View
       style={{
         flex: 1,
         height: "100%",
         backgroundColor: COLOR.WHITE,
-        paddingBottom:20,
+        paddingBottom: 20,
       }}
     >
       <View
@@ -29,7 +33,20 @@ export default function Photos({ title }) {
         >
           {title}
         </Text>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() =>navigation.navigate('MyPhoto')}
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Entypo
+            name="plus"
+            size={24}
+            color={COLOR.PRIMARY_COLOR}
+            style={{ paddingTop: 3 }}
+          />
           <Text
             style={{
               fontFamily: "quicksan_700",
@@ -37,11 +54,18 @@ export default function Photos({ title }) {
               color: COLOR.PRIMARY_COLOR,
             }}
           >
-            See all
+            Add new photo
           </Text>
         </TouchableOpacity>
       </View>
-      <View style={{ flexDirection: "row", justifyContent: "space-between", width: "100%",paddingHorizontal: 15}}>
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          width: "100%",
+          paddingHorizontal: 15,
+        }}
+      >
         {/* <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}> */}
         <TouchableOpacity
           style={{
@@ -51,7 +75,12 @@ export default function Photos({ title }) {
           }}
         >
           <Image
-            style={{ width: 80, height: 80, borderRadius: 4, resizeMode: "contain"}}
+            style={{
+              width: 80,
+              height: 80,
+              borderRadius: 4,
+              resizeMode: "contain",
+            }}
             source={{
               uri: "https://www.eatthis.com/wp-content/uploads/sites/4/2019/06/deep-dish-pizza-chicago.jpg",
             }}
@@ -84,7 +113,12 @@ export default function Photos({ title }) {
           }}
         >
           <Image
-            style={{ width: 80, height: 80, borderRadius: 4, resizeMode: "contain"}}
+            style={{
+              width: 80,
+              height: 80,
+              borderRadius: 4,
+              resizeMode: "contain",
+            }}
             source={{
               uri: "https://images.squarespace-cdn.com/content/v1/57ad8de5ff7c50d12ce76b68/1557409877466-C0USCRFU6WB11OJTARP8/Ambience+Restaurant?format=1000w",
             }}
@@ -118,7 +152,12 @@ export default function Photos({ title }) {
           }}
         >
           <Image
-            style={{ width: 80, height: 80, borderRadius: 4, resizeMode: "contain"}}
+            style={{
+              width: 80,
+              height: 80,
+              borderRadius: 4,
+              resizeMode: "contain",
+            }}
             source={{
               uri: "https://www.pos365.vn/storage/app/media/2021/11/menu/menu-quan-cafe.jpg",
             }}
@@ -144,6 +183,7 @@ export default function Photos({ title }) {
         </TouchableOpacity>
 
         <TouchableOpacity
+          onPress={() =>navigation.navigate('AllCaro')}
           style={{
             justifyContent: "center",
             alignItems: "center",
@@ -152,7 +192,12 @@ export default function Photos({ title }) {
           }}
         >
           <Image
-            style={{ width: 80, height: 80, borderRadius: 4, resizeMode: "contain"}}
+            style={{
+              width: 80,
+              height: 80,
+              borderRadius: 4,
+              resizeMode: "contain",
+            }}
             source={{
               uri: "https://www.eatthis.com/wp-content/uploads/sites/4/2019/06/deep-dish-pizza-chicago.jpg",
             }}
