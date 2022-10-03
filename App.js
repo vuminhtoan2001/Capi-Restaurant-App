@@ -1,22 +1,28 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import Test from "~/test";
+import { useFonts } from "expo-font";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import AppNavigation from "./AppNavigation";
+import Provider from "~/components/Provider";
+
+const queryClient = new QueryClient();
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Test/>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  const [fontsLoaded] = useFonts({
+    quicksan_300: require("./assets/fonts/Quicksand-Light.ttf"),
+    quicksan_400: require("./assets/fonts/Quicksand-Regular.ttf"),
+    quicksan_500: require("./assets/fonts/Quicksand-Medium.ttf"),
+    quicksan_600: require("./assets/fonts/Quicksand-SemiBold.ttf"),
+    quicksan_700: require("./assets/fonts/Quicksand-Bold.ttf"),
+  });
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+  if (!fontsLoaded) {
+    return null;
+  } else {
+    return (
+      <QueryClientProvider client={queryClient}>
+        <Provider>
+          <AppNavigation />
+        </Provider>
+      </QueryClientProvider>
+    );
+  }
+}
